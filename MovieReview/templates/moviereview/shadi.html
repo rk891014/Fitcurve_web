@@ -1,0 +1,729 @@
+<!doctype html>
+{% load staticfiles %}
+{% block content %}
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" color="red" href="{% static 'css/style.css' %}"/>
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+<!--nav bar portion-->
+    <div>
+        <nav class="navbar navbar-expand-sm  sticky-top  navbar-dark bg-transparent a">
+            <a href="#" class="navbar-brand">
+                <img src="{% static 'img/rohit.jpg' %}" alt="logo" height="80" width="80"><h5 class="mylogo" style="color:black">FITCURVE</h5>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+
+                <i class="fa fa-bars navitem" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="myMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link active"><span class="navitem" style="color:black">HOME</span></a></li>
+                <li class="nav-item"><a href="add_movie" class="nav-link"><span class="navitem" style="color:black">FILL FORM</span></a></li>
+                <li class="nav-item"><a href="rohit" class="nav-link"><span class="navitem" style="color:black">PEOPLE</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="navitem" style="color:black">CONTACT</span></a></li>
+            </ul>
+            </div>
+
+
+            <form class="form-inline my-2 my-lg-0" role="search" action="/moviereview/s">
+                    <div class="input-group md-3">
+                            <input type="text" name='q' class="form-control" placeholder="Search here..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary search-button" style="background-color: white; hover { color:black;}">Search</button>
+                            </div>
+                          </div>
+
+            </form>
+        </nav>
+         </div>
+        <!--main page slider-->
+        <div class="containerfluid ">
+            <div id="myslideshow" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#myslideshow"data-slide-to="0"></li>
+                    <li  data-target="#myslideshow"data-slide-to="1"></li>
+                    <li  data-target="#myslideshow"data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'img/fit.jpg' %}" alt="" class="d-block w-100" height="auto">
+                        <div class="carousel-caption d-none d-md-block" style="color:black"><h4>DO OR DIE</h4><br><p>Keep your eyes on the stars and feet on the ground</p></div>
+                    </div>
+
+
+
+                    <div class="carousel-item">
+                        <img src="{% static 'img/running.jpg' %}" alt="" class="d-block w-100" height="auto">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'img/ocean.jpg' %}" alt="" class="d-block w-100" height="auto">
+                    </div>
+                </div>
+                <a href="#myslideshow" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="sr-only">previous</span>
+                </a>
+                <a href="#myslideshow" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="sr-only">next</span>
+                </a>
+            </div>
+        </div>
+
+
+
+        <!--app downloading portion-->
+        <div class="b">
+            <h4 class="ml-5 d">Do You Want To Achive The Body Of Your Dream ????? </h4>
+            <h4 class="ml-5 e">Now it is as simple as to click this button</h4>
+            <h1 class="text-center f">DOWNLOAD OUR APP TO ACHIVE YOUR FITNESS GOALS</h1>
+            <p class="text-center"><input type="button" name="Download" id="submit" value="submit"  width="180px"></p>
+            </div>
+        <!--end-->
+            <div class="n row">
+
+               <div class="col-sm-8">
+                  <div class="o">
+                      <h5> You are provided here more than 350 free workout videos. </h5>
+                       <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. That's why we offer hundreds of free, professionally built workout videos, for every fitness level and goal.</p>
+                       </div>
+               </div>
+
+               <div class="col-sm-4">
+                  <div class="p"><img src="{% static 'img/ocean.jpg' %}" alt="" height="300px"></div>
+               </div>
+
+            </div>
+
+            <div class="r">
+                <h3 class="text-center">Here are some sample exercises for you</h3><br>
+
+ <!--EXERCISE SLIDER-->
+
+                <h2>ABS WORKOUT</h2><br>
+
+                 <!--ABS SLIDER-->
+
+    <div class="containerfluid">
+
+        <div class="carousel slide" data-ride="carousel" id="myslideshow1">
+                <ol class="carousel-indicators">
+                        <li class="active" data-target="#myslideshow1"data-slide-to="0"></li>
+                        <li  data-target="#myslideshow1"data-slide-to="1"></li>
+                        <li  data-target="#myslideshow1"data-slide-to="2"></li>
+                    </ol>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                        <div class="header" style="background-color: skyblue;"><h3 class="text-center">Beginner</h3></div>
+            <div class="row">
+
+                <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                    <P>
+                            FLUTTER KICKS <br><br>
+
+                            Body part : Abs <br>
+                            Description : <br>
+                            1)Lie on your back on the floor. <br>
+                            2)keep your palms on the ground near your glutes. <br>
+                            3)Raise your legs about 5 inches off the ground and keep them straight. <br>
+                            4)While keeping your legs straight, raise a leg higher while lowering the other leg. <br>
+
+                    </p>
+                </div>
+                <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                    <p>
+                            MOUNTAIN CLIMBER  <br><br>
+
+                            Body part : Abs <br>
+                            Description : <br>
+                            1)Put your palm on the floor with straight arms at shoulder width apart.Your body should be in the form of an inclined straight line. <br>
+                            2)Raise one knee to the chest and put it back.Now raise the other knee to the chest and put it back. <br>
+                            3)Repeat the whole process again. <br>
+
+                    </p>
+                </div>
+                <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt="" width="400px">
+                    <p>
+                            REVERSE AB BIKE <br><br>
+
+                            Body part : Abs <br>
+                            Description : <br>
+                            1)Lie down on the floor with your leg straight and palms on the floor. <br>
+                            2)Lift your leg and do the bicycle crunches in reverse direction. <br>
+                            3)Keep your core ingaged. <br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+                <div class="carousel-item">
+                        <div class="header" style="background-color: skyblue;"><h3 class="text-center">Intermediate</h3></div>
+                <div class="row">
+                    <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt="" class=""  width="400px" height="250px" >
+                        <p>
+                                LEG DROP <br><br>
+
+                                Body part : Abs <br>
+                                Description : <br>
+                                1)Lie on your back with your legs extended and toes towards the ceiling. There should be a slight bend in your knees. <br>
+                                2)Put your palm on the floor and contract your abdominal muscles. <br>
+                                3)Drop your right leg towards the ground (Make sure your leg should not touch the floor. <br>
+                                4)Slowly lift your dropped leg to the initial position. <br>
+                                5)Do the same with your left. <br>
+
+                        </p>
+                    </div>
+                    <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt="" class=""  width="400px">
+                        <p>
+                                LEG ROLL <br><br>
+
+                                Body part : Abs <br>
+                                Description : <br>
+                                1)Lie on your back with your legs extended pointed towards the ceiling. Put your palm on the floor and contract your abdominal muscles. <br>
+                                2)Drop your both leg to the ground but not touch the floor. Then move your feet towards glutes by bending your knees. <br>
+                                3)lift your shins to the initial position. <br>
+
+                        </p>
+                    </div>
+                    <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt="" class=""  width="400px">
+                        <p>
+                                AB BIKE <br><br>
+                                Body part : Abs <br>
+                                Description : <br>
+                                1)Lie flat on the floor with your lower back pressed to the ground. <br>
+                                2)Put your hands behind your head, then bring your knees in towards your chest and lift your shoulder blades off the ground, but be sure not to pull on your neck. <br>
+                                3)Straighten your right leg out while turning your upper body to the left, bringing your right elbow towards the left knee. <br>
+                                4)Make sure your rib cage is moving and not just your elbows. <br>
+                                5)Now switch sides and do the same motion on the other side to complete one rep. <br>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                    <div class="header" style="background-color: skyblue;"><h3 class="text-center">Advanced</h3></div>
+                    <div class="row">
+                        <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                            <p>
+                                    LEG RAISES <br><br>
+
+                                    Body part : Abs <br>
+                                    Description : <br>
+                                    1)Lie on a mat on the floor, face up, legs extended. <br>
+                                    2)Place your hands near your lower back and glutes. <br>
+                                    3)Begin to raise your legs toward the ceiling, pressing your thighs together and keeping the legs straight. <br>
+                                    4)Lift until your hips are fully flexed and you can’t go any higher with straight legs, then lower back down and repeat. <br>
+
+                            </p>
+                        </div>
+                        <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                            <p>
+                                    REVERSE CRUNCH <br><br>
+
+                                    Body part : Abs <br>
+                                    Description : <br>
+                                    1)Lie face down on the floor with your body straight. Put your hands on head. <br>
+                                    2)Lift your torso off the ground as much high as you can. <br>
+                                    3)Go back to your normal position and repeat . <br>
+
+                            </p>
+                        </div>
+                        <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                            <p>
+                                    KNEE TO ELBOW PLANK <br><br>
+
+                                    Body part : Abs <br>
+                                    Description : <br>
+                                    1)Place your left forearm beneath your shoulder and toes of left leg on the floor and maintain the position of side plank. <br>
+                                    2)Move your right elbow and right knee towards each other. <br>
+                                    3)Keep your core tight and do the require reps. <br>
+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="#myslideshow1" class="carousel-control-prev" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only" >previous</span>
+                    </a>
+                    <a href="#myslideshow1" class="carousel-control-next" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">next</span>
+                    </a>
+
+            </div>
+            </div>
+
+    </div> <br><br><br>
+
+    <!--ARMS SLIDER-->
+
+    <h2 class="text-center">ARMS WORKOUT</h2><br><br>
+
+    <div class="containerfluid">
+
+            <div class="carousel slide" data-ride="carousel" id="myslideshow2">
+                    <ol class="carousel-indicators">
+                            <li class="active" data-target="#myslideshow2"data-slide-to="0"></li>
+                            <li  data-target="#myslideshow2"data-slide-to="1"></li>
+                            <li  data-target="#myslideshow2"data-slide-to="2"></li>
+                        </ol>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                            <div class="header" style="background-color: skyblue;"><h3 class="text-center">Beginner</h3></div>
+                <div class="row">
+
+                    <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                         <P>
+                                X ARM SWING <br><br>
+
+                                Body part : Arms <br>
+                                Description : <br>
+                                1)Stand straight on your feet shoulder width apart on the floor. <br>
+                                2)Bend your elbows and lift them till your shoulder level. <br>
+                                3)Move your forearms in a criss cross motion and make a sign of x with them. <br>
+
+                         </p>
+                      </div>
+                    <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                        <p>
+                                IO STEPPING WITH CHAIR <br><br>
+
+                                Body part : Arms <br>
+                                Description : <br>
+                                1)Take a chair and put your palms on it. <br>
+                                2)Your feet should be on the floor. Keep your body straight with your face up. This is your initial position. <br>
+                                3)Now take some small steps and walk to the chair. <br>
+                                4)Now take steps away from the chair and get back into your initial position. <br>
+
+                        </p>
+                    </div>
+                    <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt="" width="400px">
+                        <p>
+                                ELBOW SQUEEZE <br><br>
+                                Body part : Arms <br>
+                                Description : <br>
+                                1)Stand straight on your feet shoulder width apart on the floor. <br>
+                                2)Place your hands on your side with your palms facing up. Keep them parallel to the floor. <br>
+                                3)Bend your elbows and bring the hands near your body. <br>
+                                4)Get back into your initial position. <br>
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+                    <div class="carousel-item">
+                            <div class="header" style="background-color: skyblue;"><h3 class="text-center">Intermediate</h3></div>
+                    <div class="row">
+                        <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt="" class=""  width="400px" height="250px" >
+                            <p>
+                                    TRICEPS DIPS <br><br>
+
+                                    Body part : Triceps <br>
+                                    Description : <br>
+                                    1)Take a chair and put your hands on it. Keep your back facing the chair and feet flat on the floor. <br>
+                                    2)Bend your elbows and lower your body down. Bend your knees also while lowering your body. <br>
+                                    3)Keep ingaged your triceps muscles throughout the exercise. <br>
+
+                            </p>
+                        </div>
+                        <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt="" class=""  width="400px">
+                            <p>
+                                    FOREARMS ROTATION <br><br>
+
+                                    Body part : Arms <br>
+                                    Description : <br>
+                                    1)Stand straight on your feet at hip width apart. <br>
+                                    2)Place your back arms parallel to the floor. <br>
+                                    3)Rotate your forearms up and down as shown in vedio. <br>
+
+                            </p>
+                        </div>
+                        <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt="" class=""  width="400px">
+                            <p>
+                                    PREACHER CURL <br><br>
+
+                                    Body part : Biceps <br>
+                                    Description : <br>
+                                    1)Take a chair and put your right hand on it. <br>
+                                    2)Lift some weight with your right hand and move its forearm up and down. <br>
+                                    3)Your biceps muscles should be activated throughout the exercise. <br>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                        <div class="header" style="background-color: skyblue;"><h3 class="text-center">Advanced</h3></div>
+                        <div class="row">
+                            <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                                <p>
+                                        BICEPS PUSHUPS <br><br>
+
+                                        Body part : Biceps <br>
+                                        Description : <br>
+                                        1)Lie down on the floor with your face down and legs straight. <br>
+                                        2)Put your palms near your waist and your fingures pointed towards your legs. <br>
+                                        3)Push your body up untill your hands become straight, hold for a few seconds and lower your body down. <br>
+                                        4)Keep your body straight and focus on your biceps muscles. <br>
+
+                                </p>
+                            </div>
+                            <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                                <p>
+                                        TRICEPS PUSHUPS WITH CHAIR <br><br>
+
+                                        Body part : Triceps <br>
+                                        Description : <br>
+                                        1)Take a chair and put your toes on it. Place your hands on the floor. <br>
+                                        2)Keep your both palms close to each other and make the posture of daimond pushups. <br>
+                                        3)Bend your elbows and lower down your body untill your chest is almost touching the ground. <br>
+                                        4)Get back into your initial position. <br>
+
+                                </p>
+                            </div>
+                            <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                                <p>
+                                        IO STEPPING WITH HAND <br><br>
+
+                                        Body part : Biceps <br>
+                                        Description : <br>
+                                        1)Put your feet on the chair and hands on the floor. Keep your core tight in this posture. <br>
+                                        2)Take a few steps away from the chair with your hands and then take some steps towards the chair. <br>
+
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#myslideshow2" class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="sr-only" >previous</span>
+                        </a>
+                        <a href="#myslideshow2" class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only">next</span>
+                        </a>
+
+                </div>
+                </div>
+
+        </div>
+
+
+
+                <!--back and shoulder-->
+
+
+                <h2>BACK AND SHOULDER WORKOUT</h2><br><br>
+
+                <div class="containerfluid">
+
+                        <div class="carousel slide" data-ride="carousel" id="myslideshow3">
+                                <ol class="carousel-indicators">
+                                        <li class="active" data-target="#myslideshow3"data-slide-to="0"></li>
+                                        <li  data-target="#myslideshow3"data-slide-to="1"></li>
+                                        <li  data-target="#myslideshow3"data-slide-to="2"></li>
+                                    </ol>
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                        <div class="header" style="background-color: skyblue;"><h3 class="text-center">Beginner</h3></div>
+                            <div class="row">
+
+                                <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                                     <P>
+                                            PRAYER PULSES  <br><br>
+
+                                            Body part : Back and Shoulders <br>
+                                            Description : <br>
+                                            1)Stand straight on your feet hip width apart on the floor. <br>
+                                            2)Make a prayer pose with both of your hands, palms touching each other  completely. <br>
+                                            3)Lift your hands upto your head (holding this posture) with the help of your back muscles.   <br>
+
+
+                                     </p>
+                                  </div>
+                                <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                                    <p>
+                                            LYING WING FLY <br> <br>
+
+                                            Body part : Back <br>
+                                            Description : <br>
+                                            1)Lie down on the floor with your face down and legs extended. <br>
+                                            2)Put your hands straight and near your hips. <br>
+                                            3)Move your back muscles by lifting your hands up as much as you can. Back to your normal position and do the required reps. <br>
+
+                                    </p>
+                                </div>
+                                <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt="" width="400px">
+                                    <p>
+
+                                            FULL HAND ROTATION <br><br>
+
+                                            Body part : Shoulder <br>
+                                            Description: <br>
+                                            1)Lie down flat on the floor with your back facing the roof. <br>
+                                            2)Bent your knees and lift your shins off the ground. Keep your soles on your hips by folding your legs. <br>
+                                            3)Extend your hands completely and make them parallel to the ground. Make sure they should not touch the ground. <br>
+                                            4)Move your hands in a circle as shown in vedio. <br>
+
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                                <div class="carousel-item">
+                                        <div class="header" style="background-color: skyblue;"><h3 class="text-center">Intermediate</h3></div>
+                                <div class="row">
+                                    <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt="" class=""  width="400px" height="230px" >
+                                        <p>
+
+                                                BENT OVER ROW <br><br>
+                                                Body part : Back <br>
+                                                Description : <br>
+                                                1)Put your feet on the floor slightly wider than hip width. Your knees and upper body should be slightly bent. <br>
+                                                2)Take a towel in your hands and grab it with both of your palms. Put your arms slightly wider than shoulder width. <br>
+                                                3)In initial position your hands should be fully extended and inclined. <br>
+                                                4)Now pull the towel near you and bend your elbows. Include your back muscles throughout the exercise. <br>
+
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt="" class=""  width="400px" height="230px">
+                                        <p>
+
+                                                STANDING WING FLY <br><br>
+
+                                                Body part : Back <br>
+                                                Description : <br>
+                                                1)Put your feet on the floor slightly wider than hip width. Your knees and upper body should be slightly bent. <br>
+                                                2)Open your hands outside your body and make them straight. <br>
+                                                3)Swing your hands up and down as like tiny pulses with the help of your shoulder muscles. <br>
+
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt="" class=""  width="400px" height="230px">
+                                        <p>
+
+                                                DUCK SWIM <br><br>
+
+                                                Body part : Back <br>
+                                                Description : <br>
+                                                1)Lie down on the floor with your face down and legs straight. Put your hands near your body and palms facing the roof. <br>
+                                                2)Lift your shoulder as well as your hands off the ground as high as you can. <br>
+                                                3)Take the support of your shouldeers in lifting not your arms. <br>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                    <div class="header" style="background-color: skyblue;"><h3 class="text-center">Advanced</h3></div>
+                                    <div class="row">
+                                        <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                                            <p>
+
+                                                    SHOULDER EXTENSION <br><br>
+
+                                                    Body part : Shoulder <br>
+                                                    Description : <br>
+                                                    1)Put your knees and palms on the floor. Keep your spine straight parallel to the floor. <br>
+                                                    2)Take a resistance band in your hands. Stuck it in your left hand and grab with your right palm. <br>
+                                                    3)Raise your hand up and pull the band with the help of your shoulder muscles. <br>
+                                                    4)Slowly get back to your normal position and repeat again. <br>
+
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                                            <p>
+
+                                                    HANGING WEIGHTED ROWS <br><br>
+
+                                                    Body part : Back <br>
+                                                    Description : <br>
+                                                    1)Take a chair and put your left hand on it by bending your upper body in a right angle with your legs. <br>
+                                                    2)Take some weight in your right hand and grab it lightly. <br>
+                                                    3)Move your hand slowly up and down as you are pulling something. <br>
+                                                    4)Focus on your back muscles. <br>
+
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4"><img src="{% static 'img/ocean.jpg' %}" alt=""  width="400px">
+                                            <p>
+
+                                                    PIKE SHOULDER PRESS <br><br>
+
+                                                    Body part : Back <br>
+                                                    Description : <br>
+                                                    1)Put your palms and toes on the floor with your face down. Keep the rest of your body off ground and knees slightly bent. <br>
+                                                    2)Move your body to the floor with the help of your shoulder and do a kind of pushup. <br>
+                                                    3)Come back to your initial position. Focus on your back and shoulder muscles throughout the exercise. <br>
+
+
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <a href="#myslideshow3" class="carousel-control-prev" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="sr-only" >previous</span>
+                                    </a>
+                                    <a href="#myslideshow3" class="carousel-control-next" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="sr-only">next</span>
+                                    </a>
+
+                            </div>
+                            </div>
+
+                    </div>
+
+
+
+            </div> <br><br><br>
+
+  <!--about us portion-->
+        <div class="g">
+            <h1 class="text-center h">FITCURVE</h1>
+            <p>
+
+                    https://www.fitnessblender.com/
+                    Fitness Blender provides free full length workout videos, workout routines, healthy recipes ... The most affordable and effective workout programs on the web.
+                    ‎Fitness · ‎Free Workout Videos · ‎Workouts And Programs · ‎Sign In
+                    You've visited this page 4 times. Last visit: 17/8/19
+                    Booya Fitness
+
+                    https://www.booyafitness.com/
+                    The first fitness video platform to bring boutique workouts to your busy lifestyle.
+                    ‎Booya Fitness Blog · ‎Sign in · ‎Library · ‎Browse All
+                    You visited this page on 11/8/19.
+                    Most Popular Free Health / Fitness Website Templates 2019 - Colorlib
+
+                    https://colorlib.com/wp/cat/health-fitness/
+                    The highest quality free health and fitness website templates with a mobile-ready and responsive design, compatible with modern web browsers. ... If you are looking to create a fresh new website, TopGym is the free Bootstrap gym website template you should investigate further.
+                    Startup Active: Fitness Websites | Personal Training Websites
+
+                    https://www.startupactive.com/
+                    Startup Active is a website, branding and marketing digital agency offering award winning digital services that connect you to your ideal customer.
+                    ‎Fitness Website Design · ‎Branding · ‎Contact · ‎Work
+                    Best Fitness Websites 10 Fitness Websites To Inspire You
+
+
+                    Anytime Fitness – your neighborhood 24 hour gym. With thousands of convenient, welcoming locations worldwide, we'll help you get to a healthier place
+            </p><br><br><br>
+
+
+
+  <!--contact form-->
+      <div class="i" id="contact">
+        <div class="j">
+                <div class="fun1">
+
+                    <fieldset>
+                                <legend>update your detail</legend>
+                               <form class="contact_form" method="post" enctype="multipart/form-data" action="/moviereview/add_movie_form_submission">
+
+                                    {% csrf_token %}
+                                <p>
+                                <label>Your Name
+                                <input type="text" name="movie_name" required>
+                                </label>
+                                </p>
+
+                                <p>
+                                <label>Your Height<br>
+                                <input type="text" name="movie_type" required>
+                                </label>
+                                </p>
+
+                                    <p>
+                                <label>YourWeight<br>
+                                <input type="text" name="movie_review" required>
+                                </label>
+                                </p>
+
+                                    <p>
+                                <label>Your Email
+                                <input type="Email" name="movie_release_date" required>
+                                </label>
+                                </p>
+
+                                    <p>
+                                <label>About You
+                                <input type="text" name="movie_detail" required>
+                                </label>
+                                </p>
+
+
+
+                                        <p>
+                                <label>Profile Picture
+                                <input type="file" name="image">
+                                </label>
+                                </p>
+
+
+                                <p><button class="btn btn-secondary btn-lg">Upload</button></p>
+
+                                </form>
+
+                    </fieldset>
+                </div>
+        </div>
+                    <!--<div class="l">-->
+                        <!--<div class="k">-->
+                            <!--<h3>Fitness Fun</h3>-->
+                            <!--<h5>Upload your media and join us for an ultimate fun of fitness(~)</h5><br/><br/>-->
+                            <!--Your image  : <input type="file" accept="image/*" ><br/><br/>-->
+                            <!--Your vedio  : <input type="file" accept="vedio/*"><br/><br/>-->
+                            <!--<button type="button" class="btn btn-secondary btn-lg">Upload</button>-->
+                            <!--</div>-->
+                            <!--</div>-->
+      </div>
+       <!--footer row-->
+        <footer class="t">
+            <div class="m">
+                   <a href="#" class="fa fa-facebook"></a>
+                   <a href="#" class="fa fa-instagram"></a>
+                   <a href="#" class="fa fa-twitter"></a>
+            </div>
+            </footer>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        </div>
+    </body>
+</html>
+{% endblock %}

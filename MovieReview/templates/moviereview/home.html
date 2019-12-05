@@ -1,0 +1,43 @@
+{% load staticfiles %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>S3 Example Static Only22</title>
+  <link rel="stylesheet" type="text/css" color="red" href="{% static 'css/bootstrap.min.css' %}"/>
+</head>
+<body>
+    <!--<img src="{% static 'img/rohit.jpg' %}" width="500" height="500"/>-->
+
+<h1>search related match "{{ query }}"</h1>
+
+    {% if sr %}
+<div class="row">
+
+        {% for movie in sr %}
+<div class="col-sm-6, col-md-4, col-lg-4">
+    {% if movie.image %}
+
+        <a href="{{movie.image.url}}" target="_blank">
+            <img src="{{movie.image.url}}" alt="{{image.name}}" width="auto" height="300">
+        </a>
+    <br>
+        Name - {{ movie.movie_name }}<br>
+        Height - {{ movie.movie_type }}<br>
+        Weight - {{ movie.movie_review }}<br>
+        Email - {{ movie.movie_release_date }}<br>
+        About - {{ movie.movie_detail }}<br>
+
+        {% endif %}
+</div>
+        <br>
+        {% endfor %}
+</div>
+    {% else %}
+        not found
+    {% endif %}
+
+
+
+
+    </body>
+</html>

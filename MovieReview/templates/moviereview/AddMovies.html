@@ -1,0 +1,52 @@
+{% block content %}
+{% load staticfiles %}
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>-->
+<h1 align="center">Add your details</h1>
+
+
+<div class="container rohit" style="color:blue" >
+
+
+<form class="contact_form" method="post" enctype="multipart/form-data" action="/moviereview/add_movie_form_submission">
+
+    {% csrf_token %}
+
+
+
+<p  align="center">
+Your Name <input type="text" name="movie_name" required>
+
+</p>
+
+<p  align="center">
+Your Height <input type="text" name="movie_type"  required>
+
+</p>
+
+    <p align="center">
+Your Weight <input type="text" name="movie_review" required>
+</p>
+
+    <p align="center">
+Your Email <input type="text" name="movie_release_date" required>
+
+</p>
+
+    <p align="center">
+About You <input type="text" name="movie_detail" required>
+</p>
+
+
+
+        <p align="center">
+Profile Picture <input type="file" name="image">
+</p>
+
+
+<p align="center"><button class="btn btn-secondary btn-lg" style="color:black">Submit</button></p>
+
+</form>
+
+</div>
+{% endblock %}

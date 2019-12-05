@@ -1,0 +1,33 @@
+{% extends "moviereview/header.html"%}
+{% block content %}
+<br>
+<h2 align="center"  style="color:red">Fit People List</h2>
+<div class="row">
+{% for movie in Movies %}
+
+    <div class="col-sm-6, col-md-4, col-lg-4">
+
+        {% if movie.image %}
+        <a href="{{movie.image.url}}" target="_blank">
+        <img src="{{movie.image.url}}" alt="{{image.name}}" width="auto" height="300">
+        </a>
+        {% endif %}
+        <br>
+        Name - {{ movie.movie_name }}<br>
+        Height - {{ movie.movie_type }}<br>
+        Weight - {{ movie.movie_review }}<br>
+        Email - {{ movie.movie_release_date }}<br>
+        About - {{ movie.movie_detail }}<br>
+
+
+    </div>
+    {% endfor %}
+</div>
+
+<!--<img srdf"{{movie.image.url}}">-->
+
+<br>
+<br>
+
+
+{% endblock %}
